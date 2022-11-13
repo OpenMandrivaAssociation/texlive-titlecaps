@@ -1,18 +1,12 @@
-# revision 30911
-# category Package
-# catalog-ctan /macros/latex/contrib/titlecaps
-# catalog-date 2013-06-19 11:29:28 +0200
-# catalog-license lppl
-# catalog-version 1.0
 Name:		texlive-titlecaps
-Version:	1.2
-Release:	2
+Version:	63020
+Release:	1
 Summary:	Setting rich-text input into Titling Caps
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titlecaps
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlecaps.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlecaps.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlecaps.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlecaps.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ as lower-cased, and also allows for titling exceptions of
 various sorts.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,7 +39,7 @@ various sorts.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
