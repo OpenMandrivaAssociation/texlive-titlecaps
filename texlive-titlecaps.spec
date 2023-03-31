@@ -1,6 +1,6 @@
 Name:		texlive-titlecaps
 Version:	63020
-Release:	1
+Release:	2
 Summary:	Setting rich-text input into Titling Caps
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titlecaps
