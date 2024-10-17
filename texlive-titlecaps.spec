@@ -3,7 +3,7 @@ Version:	63020
 Release:	2
 Summary:	Setting rich-text input into Titling Caps
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titlecaps
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/titlecaps
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlecaps.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlecaps.doc.r%{version}.tar.xz
